@@ -6,6 +6,7 @@ import {
   getRecipe,
   updateRecipe,
 } from "../controllers/recipeController.js";
+import idControl from "../middleware/IdControl.js";
 
 const router = express.Router();
 //
@@ -17,8 +18,8 @@ router
 //
 router
   .route("/api/v1/recipes/:id")
-  .get(getRecipe)
-  .delete(deleteRecipe)
-  .patch(updateRecipe);
+  .get(idControl, getRecipe)
+  .delete(idControl, deleteRecipe)
+  .patch(idControl, updateRecipe);
 
 export default router;

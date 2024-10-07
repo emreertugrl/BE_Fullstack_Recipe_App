@@ -66,8 +66,42 @@ export const createRecipe = (req, res) => {
   });
 };
 
-export const getRecipe = (req, res) => {};
+export const getRecipe = (req, res) => {
+  // client cevap
+  res.status(200).json({
+    message: "Aradığınız tarif bulundu",
+    found: req.foundRecipe,
+  });
+};
 
-export const deleteRecipe = (req, res) => {};
+export const deleteRecipe = (req, res) => {
+  // silinecek sırasını bul
+  const index = data.findIndex((i) => i.id === req.params.id);
+  // elemanı diziden kaldır
+  data.splice(index, 1);
 
-export const updateRecipe = (req, res) => {};
+  // json dosyasını güncelle
+  writeRecipes(data);
+  // cevap gönder
+  res.status(204).json({
+    message: "Tarih silindi.",
+  });
+};
+
+export const updateRecipe = (req, res) => {
+  // eski tarif nesnesini güncelle
+  const updated = { ...req.foundRecipe, ...req.body };
+
+  // indexsini bul
+  const index = data.findIndex((i) => i.id === req.params.id);
+  // diziyi güncelle
+  data.splice(index, 1, updated);
+
+  // json dosyasını güncelle
+  writeRecipes(data);
+  // client cevap gönder
+  res.status(200).json({
+    message: "Tarif güncellendi.",
+    recipe: updated,
+  });
+};
