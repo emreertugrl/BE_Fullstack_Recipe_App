@@ -12,8 +12,7 @@ export const readRecipes = () => {
 // param olarak aldığı veriyi json dosyasına yazar
 export const writeRecipes = (data) => {
   try {
-    const text = JSON.stringify(recipes);
-    fs.writeFileSync("./data.json", text);
+    fs.writeFileSync("./data.json", JSON.stringify(data));
   } catch (error) {
     console.log(error);
   }
