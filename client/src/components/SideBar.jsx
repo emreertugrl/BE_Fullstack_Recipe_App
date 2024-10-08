@@ -11,8 +11,9 @@ const SideBar = () => {
         className="max-w-[80px] md:max-w-[120px]"
       />
       <nav className="flex flex-col gap-14 ">
-        {links.map((i) => (
+        {links.map((i, key) => (
           <NavLink
+            key={key}
             to={i.path}
             className="flex gap-4 items-center text-lg text-gray-400"
           >

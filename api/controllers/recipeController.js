@@ -51,7 +51,7 @@ export const createRecipe = (req, res) => {
   newRecipe = {
     ...newRecipe,
     id: crypto.randomUUID(),
-    photo: `https://picsum.photos/seed/${crypto.randomUUID()}/500/500`,
+    image: `https://picsum.photos/seed/${crypto.randomUUID()}/500/500`,
   };
   // 4) tarif verisini diziye ekle
   data.push(newRecipe);
