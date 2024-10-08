@@ -12,7 +12,7 @@ const App = () => {
       <div className="flex">
         <SideBar />
 
-        <div className="flex-1  bg-gray-200">
+        <div className="flex-1  bg-gray-200 p-5">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/tarif/:" element={<Detail />} />
