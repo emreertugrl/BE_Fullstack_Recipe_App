@@ -15,7 +15,7 @@ const App = () => {
         <div className="flex-1  bg-gray-200 p-5">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/tarif/:" element={<Detail />} />
+            <Route path="/tarif/:id" element={<Detail />} />
             <Route path="/ekle" element={<Create />} />
             <Route path="/güncelle" element={<Update />} />
             <Route path="*" element={<Undifined />} />

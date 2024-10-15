@@ -13,4 +13,10 @@
   .btn {
     @apply bg-gray-400 hover:bg-gray-500 py-2 px-4 rounded-md text-white font-semibold text-lg;
   }
+  .badge {
+    @apply bg-yellow-500 py-2 px-4 rounded-lg text-white font-semibold;
+  }
+  .title {
+    @apply my-3 text-red-400 font-bold text-2xl;
+  }
 }
