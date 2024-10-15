@@ -5,3 +5,12 @@
 .active {
   color: black;
 }
+
+@layer components {
+  .inp {
+    @apply rounded-md p-2 focus:outline-red-400 shadow;
+  }
+  .btn {
+    @apply bg-gray-400 hover:bg-gray-500 py-2 px-4 rounded-md text-white font-semibold text-lg;
+  }
+}

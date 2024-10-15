@@ -151,5 +151,15 @@
     "servingSuggestion": "Kısır, marul yaprakları ile birlikte servis edilebilir.",
     "id": "70759435-a81c-4a59-be09-236d378debd1",
     "image": "/kısır.webp"
+  },
+  {
+    "recipeName": "menemen",
+    "category": "Kahvaltı",
+    "recipeTime": "20",
+    "instructions": ["adım1", "adım2", "adım3", "adım4"],
+    "servingSuggestion": "ekmekle",
+    "ingredients": ["domates", "yumurta", "soğan"],
+    "id": "b2d83f6e-50b7-48da-b2a4-1b8a6e71250c",
+    "image": "https://picsum.photos/seed/3f94099d-e314-459b-80ca-42a401be1463/500/500"
   }
 ]
