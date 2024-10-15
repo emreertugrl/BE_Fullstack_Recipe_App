@@ -59,7 +59,7 @@ To run the project locally, follow these steps:
    ```
 2. Navigate to the backend directory:
    ```bash
-   cd BE_Fullstack_Recipe_App/backend
+   cd .\api\
    ```
 3. Install backend dependencies:
    ```bash
@@ -74,7 +74,7 @@ To run the project locally, follow these steps:
 
 1. Navigate to the frontend directory:
    ```bash
-   cd ../frontend
+   cd .\client\
    ```
 2. Install frontend dependencies:
 
