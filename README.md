@@ -93,11 +93,7 @@ To run the project locally, follow these steps:
 
 ## Visual
 
-<img src="/recipe.gif" alt="recipe-app-gif">
-
-## API'ler
-
-No external APIs were used in this project.
+<img src="/client/public/recipe.gif" alt="recipe-app-gif">
 
 ## Contact
 
