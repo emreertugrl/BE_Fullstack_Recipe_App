@@ -3,8 +3,9 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import api from "../api";
 import { IoMdArrowRoundBack } from "react-icons/io";
-import { FaClock, FaTrashAlt } from "react-icons/fa";
+import { FaClock } from "react-icons/fa";
 import { PiForkKnifeFill } from "react-icons/pi";
+import { MdEdit } from "react-icons/md";
 import Loader from "./../components/Loader";
 import Error from "./../components/Error";
 import DeleteButton from "../components/DeleteButton";
@@ -26,7 +27,16 @@ const Detail = () => {
           <IoMdArrowRoundBack />
           Geri
         </Link>
-        <DeleteButton productId={data?.id} />
+        <div className="flex items-center gap-2">
+          <Link
+            to={`/düzenle/${data?.id}`}
+            className="btn bg-blue-500 hover:bg-blue-600 flex items-center justify-center px-2 py-1 gap-2 min-w-[80px]"
+          >
+            <MdEdit />
+            Düzenle
+          </Link>
+          <DeleteButton disabled={!data?.id} productId={data?.id} />
+        </div>
       </div>
 
       {isLoading ? (

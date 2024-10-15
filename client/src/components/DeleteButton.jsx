@@ -24,7 +24,7 @@ const DeleteButton = ({ productId }) => {
     <button
       disabled={isLoading}
       onClick={mutate}
-      className="btn bg-red-500 hover:bg-red-600 flex items-center justify-center px-2 py-1 gap-2 min-w-[90px]"
+      className="btn bg-red-500 hover:bg-red-600 flex items-center justify-center px-2 py-1 gap-2 min-w-[80px]"
     >
       {isLoading ? (
         <LoaderSm />
