@@ -2,7 +2,7 @@ const reqFields = [
   "recipeName",
   "category",
   "recipeTime",
-  "servingSuggestion",
+  // "servingSuggestion",
   "ingredients",
   "instructions",
 ];

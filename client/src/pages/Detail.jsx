@@ -7,6 +7,7 @@ import { FaClock, FaTrashAlt } from "react-icons/fa";
 import { PiForkKnifeFill } from "react-icons/pi";
 import Loader from "./../components/Loader";
 import Error from "./../components/Error";
+import DeleteButton from "../components/DeleteButton";
 
 const Detail = () => {
   const { id } = useParams();
@@ -17,7 +18,6 @@ const Detail = () => {
     queryFn: () =>
       api.get(`/api/v1/recipes/${id}`).then((res) => res.data.found),
   });
-  console.log(data);
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -26,10 +26,7 @@ const Detail = () => {
           <IoMdArrowRoundBack />
           Geri
         </Link>
-        <button className="btn bg-red-500 hover:bg-red-600 flex items-center px-2 py-1 gap-2">
-          <FaTrashAlt />
-          Sil
-        </button>
+        <DeleteButton productId={data?.id} />
       </div>
 
       {isLoading ? (
