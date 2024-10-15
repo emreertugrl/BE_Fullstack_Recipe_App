@@ -34,7 +34,6 @@ The BE_Fullstack_Recipe_App is a full-stack web application designed to manage r
 
 - Node.js
 - Express.js
-- Node.js with Express.js: for server-side operations
 - CORS: to handle cross-origin resource sharing
 - Nodemon: for automatic server restarts during development
 
