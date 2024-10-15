@@ -27,7 +27,7 @@
     ],
     "recipeTime": 30,
     "servingSuggestion": "Mercimek çorbası, yanında taze ekmekle servis edilebilir.",
-    "image": "https://picsum.photos/501"
+    "image": "/mercimek.webp"
   },
   {
     "id": "asdasda43242dsfgdfhg",
@@ -56,7 +56,7 @@
     ],
     "recipeTime": 45,
     "servingSuggestion": "Spagetti Bolognese'yi sarımsaklı ekmek veya yeşillik salata ile servis edebilirsiniz.",
-    "image": "https://picsum.photos/500"
+    "image": "/spagettibolognese.webp"
   },
   {
     "id": "ajsd723jasd72jasd823",
@@ -86,7 +86,7 @@
     ],
     "recipeTime": 60,
     "servingSuggestion": "Karnıyarık, yanında pilav ve cacıkla servis edilebilir.",
-    "image": "https://picsum.photos/502"
+    "image": "karnıyarık.webp"
   },
   {
     "id": "hsjdkf82jasd728jashd",
@@ -113,7 +113,7 @@
     ],
     "recipeTime": 45,
     "servingSuggestion": "Şakşuka, üzerine yoğurt dökülerek servis edilebilir.",
-    "image": "https://picsum.photos/seed/8cdd-36e02c24fd55/500/500"
+    "image": "/saksuka.webp"
   },
   {
     "recipeName": "Vişne Suyu",
@@ -122,7 +122,7 @@
     "servingSuggestion": "bardakta...\n",
     "ingredients": ["vişne", "su"],
     "instructions": ["vişneyi.."],
-    "image": "https://picsum.photos/576",
+    "image": "/visne.webp",
     "id": "682b6aa3-6e61-443d-8dad-ff9963338e97"
   },
   {
@@ -150,6 +150,6 @@
     "recipeTime": 20,
     "servingSuggestion": "Kısır, marul yaprakları ile birlikte servis edilebilir.",
     "id": "70759435-a81c-4a59-be09-236d378debd1",
-    "image": "https://picsum.photos/seed/fc2b7f23-17c1-4ac3-8cdd-36e02c24fd55/500/500"
+    "image": "/kısır.webp"
   }
 ]

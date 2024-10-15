@@ -4,24 +4,28 @@ import { useQuery } from "@tanstack/react-query";
 import Card from "../components/Card";
 import Search from "../components/Search";
 import Sort from "../components/Sort";
+import { useDebounce } from "@uidotdev/usehooks";
 
 const Home = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const debouncedTerm = useDebounce(searchTerm, 1000);
   const [order, setOrder] = useState(null);
-
+  console.log(searchTerm);
   // api'ye gönderilecek parametre
   const params = {
     order,
+    search: debouncedTerm,
   };
   //apiden tarif verilerini al
   const { isLoading, error, data } = useQuery({
-    queryKey: ["recipes", order],
+    queryKey: ["recipes", order, debouncedTerm],
     queryFn: () =>
       api.get("/api/v1/recipes", { params }).then((res) => res.data.recipes),
   });
 
   return (
     <main className="overflow-y-auto">
-      <Search />
+      <Search setSearchTerm={setSearchTerm} />
       <section className="">
         {isLoading ? (
           "Loading"
